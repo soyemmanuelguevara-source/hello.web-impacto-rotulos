@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMPACTO - Rótulos, Toldos, Publicidad y mucho más...</title>
+  <meta name="description" content="IMPACTO - Rótulos, Toldos, Publicidad y mucho más... Rotulación de fachadas, toldos, rótulos luminosos, bardas y anuncios de gran formato. Diseño, producción e instalación con un mismo equipo.">
+  <meta name="keywords" content="rótulos, rotulación de fachadas, toldos, rótulos luminosos, cajas de luz, lonas publicitarias, bardas publicitarias, anuncios espectaculares, publicidad exterior, murales publicitarios, rotulación de negocios">
+  <meta name="theme-color" content="#E81D25">
+  <meta property="og:title" content="IMPACTO - Rótulos, Toldos, Publicidad y mucho más...">
+  <meta property="og:description" content="Rótulos, toldos, publicidad y mucho más. Diseñamos, producimos e instalamos rotulación de gran formato para tu negocio o tu marca.">
+  <meta property="og:image" content="imagenes/hero-azotea-mundial.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" href="imagenes/favicon.png">
+  <link rel="apple-touch-icon" href="imagenes/favicon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="24" cy="24" r="12" fill="none" stroke="currentColor" stroke-width="3"/>
+        <circle cx="24" cy="24" r="4" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="IMPACTO — Rótulos, Toldos, Publicidad y mucho más — inicio">
+          <img src="imagenes/logo-impacto.png" alt="IMPACTO — Rótulos, Toldos, Publicidad y mucho más">
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Especialidades</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#trabajos">Trabajos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Cotización
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Mobile menu -->
+  <div id="mob-menu" aria-label="Menú móvil">
+    <a href="#why">Por qué elegirnos</a>
+    <a href="#ambientes">Especialidades</a>
+    <a href="#proceso">Proceso</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#contacto">Contacto</a>
+    <a href="#contacto">Solicitar Cotización →</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Rótulos · Toldos · Publicidad
+          </div>
+
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Tu marca no pasa</span></span>
+            <span class="line"><span>desapercibida:</span></span>
+            <span class="line"><span class="accent">causa Impacto.</span></span>
+          </h1>
+
+          <p class="hero-sub" id="hero-sub">
+            Diseñamos, producimos e instalamos <strong>rótulos, toldos y publicidad exterior de gran formato</strong>: de la fachada de tu negocio a la barda o azotea que va a ver toda la ciudad.
+          </p>
+
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Cotización
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#trabajos" class="btn-outline">
+              <i class="fa-solid fa-images" style="font-size:15px; color:var(--gray);"></i>
+              Ver Trabajos Realizados
+            </a>
+          </div>
+
+          <div class="hero-trust" id="hero-trust" aria-label="Capacidades">
+            <div class="trust-item">
+              <i class="fa-solid fa-hard-hat"></i>
+              Trabajo en Altura y Azoteas
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-cloud-sun-rain"></i>
+              Materiales para Intemperie
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-paintbrush"></i>
+              Diseño e Instalación Incluidos
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              Un rótulo que nadie ve…
+              <em>no genera ni un solo cliente.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Diseñamos y producimos rotulación pensada para verse desde lejos, resistir la intemperie y trabajar para tu negocio todos los días — no solo el día que se instala.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-expand"></i>
+            </div>
+            <h3>Rotulación de Gran Formato</h3>
+            <p>Bardas, azoteas y fachadas completas. Trabajamos a la escala que tu proyecto necesita, sin perder detalle ni acabado.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-hard-hat"></i>
+            </div>
+            <h3>Equipo con Experiencia en Altura</h3>
+            <p>Azoteas, andamios y fachadas de varios niveles, con el equipo y las medidas de seguridad que cada instalación exige.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <h3>Del Diseño a la Instalación</h3>
+            <p>Un solo equipo diseña, produce e instala: pintura, vinil, estructura y toldo, sin subcontratar tu proyecto.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <h3>Trabajos para Marcas Reconocidas</h3>
+            <p>Nuestra rotulación ha formado parte de campañas de marcas nacionales y proyectos institucionales, con el mismo cuidado para cualquier tamaño de negocio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Especialidades
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Nuestras Especialidades</div>
+            <h2 class="section-title" id="amb-heading">
+              Rótulos, toldos<br>
+              <span class="gold">y mucho más</span>
+            </h2>
+            <p style="color:var(--gray-warm); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              De la fachada de tu negocio a la barda que ve toda la avenida: así cubrimos cada formato de publicidad exterior.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesita tu negocio?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Rótulos -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="imagenes/rotulacion-muro-taller.jpg"
+              alt="Rotulación pintada a mano sobre muro de taller automotriz, con letras grandes en negro">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(232,29,37,0.15); border-color:rgba(255,91,82,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-store" style="color:var(--red-light);"></i>
+              </div>
+              <h3>Rótulos</h3>
+              <p>Rotulación de fachadas, muros y letreros para negocios. Pintura y vinil con acabado profesional, hecho para durar.</p>
+              <div class="amb-temp">Especialidad 01 — Fachadas y Negocios</div>
+            </div>
+          </div>
+
+          <!-- Toldos -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="imagenes/toldo-vinil-abarrotes.jpg"
+              alt="Toldo publicitario de vinil rojo con logotipo y nombre de negocio, recién fabricado en taller">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(232,29,37,0.15); border-color:rgba(255,91,82,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-umbrella" style="color:var(--red-light);"></i>
+              </div>
+              <h3>Toldos y Lonas</h3>
+              <p>Toldos de vinil y lonas publicitarias a la medida de tu local, con estructura e instalación incluida.</p>
+              <div class="amb-temp">Especialidad 02 — Toldos y Lonas</div>
+            </div>
+          </div>
+
+          <!-- Publicidad de gran formato -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="imagenes/mural-publicitario-gran-formato.jpg"
+              alt="Mural publicitario de gran formato pintado sobre fachada completa de edificio">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(232,29,37,0.15); border-color:rgba(255,91,82,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-building" style="color:var(--red-light);"></i>
+              </div>
+              <h3>Publicidad de Gran Formato</h3>
+              <p>Bardas, azoteas y murales publicitarios a gran escala, con documentación fotográfica y aérea del resultado final.</p>
+              <div class="amb-temp">Especialidad 03 — Bardas y Azoteas</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALERÍA — Trabajos realizados
+    ══════════════════════════════════════════════════ -->
+    <section id="trabajos" aria-labelledby="trabajos-heading">
+      <div class="container">
+
+        <div class="trabajos-hdr reveal">
+          <div class="label">Trabajos Realizados</div>
+          <h2 class="section-title" id="trabajos-heading">
+            Prueba en cada pared, <span class="gold">en cada azotea</span>
+          </h2>
+          <p>Una muestra real de proyectos: de talleres de barrio a campañas de marcas nacionales.</p>
+        </div>
+
+        <div class="gallery-grid reveal">
+          <div class="gallery-item tall">
+            <img src="imagenes/azotea-publicidad-compartamos.jpg"
+                 alt="Publicidad pintada en azotea para campaña de marca bancaria nacional">
+            <span class="gallery-cap">Publicidad de azotea — campaña bancaria nacional</span>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/mural-institucional-gobierno.jpg"
+                 alt="Mural institucional pintado en barda para el Gobierno del Estado de México">
+            <span class="gallery-cap">Mural institucional — Gobierno del Estado de México</span>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/equipo-trabajo-altura-azotea.jpg"
+                 alt="Integrante del equipo de Impacto trabajando en altura sobre una azotea">
+            <span class="gallery-cap">Nuestro equipo, en plena instalación en altura</span>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/rotulacion-logotipo-negocio.jpg"
+                 alt="Pintor terminando la rotulación de un logotipo para un negocio local">
+            <span class="gallery-cap">Rotulación de logotipo para negocio local</span>
+          </div>
+          <div class="gallery-item tall">
+            <img src="imagenes/mural-institucional-escuela.jpg"
+                 alt="Mural educativo de gran escala pintado en fachada de escuela">
+            <span class="gallery-cap">Mural educativo a gran escala</span>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/mural-altura-andamio.jpg"
+                 alt="Rotulación de fachada realizada desde andamio">
+            <span class="gallery-cap">Rotulación de fachada en andamio</span>
+          </div>
+          <div class="gallery-item tall">
+            <img src="imagenes/publicidad-graderia-estadio.jpg"
+                 alt="Publicidad pintada a gran escala sobre las gradas de un estadio">
+            <span class="gallery-cap">Publicidad de gran formato en gradas de estadio</span>
+          </div>
+          <div class="gallery-item">
+            <img src="imagenes/caja-luz-rotulo-luminoso.jpg"
+                 alt="Estructura de rótulo luminoso con paneles de acrílico en fabricación">
+            <span class="gallery-cap">Fabricación de rótulos luminosos</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            De la idea a la instalación, <span class="gold">sin complicaciones</span>
+          </h2>
+          <p>Un solo equipo acompaña tu proyecto de rotulación del primer boceto a la entrega final.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Visita y Diseño</h3>
+            <p>Revisamos el espacio, tomamos medidas y preparamos una propuesta de diseño a la medida de tu fachada, barda o negocio.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Producción e Instalación</h3>
+            <p>Producimos con materiales para intemperie e instalamos con el equipo y las medidas de seguridad que cada proyecto requiere.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Entrega y Acabado Final</h3>
+            <p>Revisamos cada detalle en sitio y te entregamos un trabajo terminado, listo para trabajar por tu negocio.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         ESPECIALIDAD DESTACADA — Publicidad de Gran Formato
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Especialidad Destacada</div>
+            <h2 class="section-title" id="prod-heading">
+              Publicidad que se ve<br>
+              <span class="gold">desde toda la ciudad</span>
+            </h2>
+            <p class="producto-lead">
+              Bardas y azoteas completas convertidas en anuncios de gran formato: es nuestro trabajo más grande, y el que más se nota. Documentamos cada proyecto en fotografía y video aéreo para que veas exactamente lo que tu marca va a proyectar.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características de la publicidad de gran formato">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div>
+                  <h4>Diseño a la Medida del Espacio</h4>
+                  <p>Cada barda o azotea tiene su propia forma, ángulo y visibilidad. Diseñamos pensando en cómo se ve desde la calle.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+                <div>
+                  <h4>Pintura para Exterior de Alta Resistencia</h4>
+                  <p>Materiales pensados para sol, lluvia y años de exposición, sin perder color ni definición.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-helmet-safety"></i></div>
+                <div>
+                  <h4>Trabajo en Altura con Equipo de Seguridad</h4>
+                  <p>Azoteas, bardas perimetrales y fachadas de varios niveles, con el equipo adecuado para cada altura.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-video"></i></div>
+                <div>
+                  <h4>Documentación Fotográfica y Aérea</h4>
+                  <p>Registramos el resultado final en foto y video para que tengas material listo para mostrar o compartir.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Lo que incluye este servicio">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Exterior</span>
+                <span class="spec-name">Pintura resistente a intemperie</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">A la medida</span>
+                <span class="spec-name">Diseño según cada espacio</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Incluida</span>
+                <span class="spec-name">Instalación con equipo propio</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Foto y video</span>
+                <span class="spec-name">Documentación del resultado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="topo-photo-frame">
+                <img src="imagenes/proceso-pintura-azotea-powerade.jpg"
+                     alt="Pintor trabajando en un mural publicitario de gran formato sobre una azotea">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                En obra — Trabajo en altura
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-shield-halved" style="color:var(--red-light);"></i>
+                Acabado Exterior
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS — capacidades
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Lo que hacemos">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Rótulos</div>
+            <div class="stat-lbl">Fachadas, muros y<br>letreros para negocios</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Toldos</div>
+            <div class="stat-lbl">Vinil y lona a la<br>medida de tu local</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Publicidad</div>
+            <div class="stat-lbl">Bardas, azoteas y<br>murales de gran formato</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num">Y Mucho Más</div>
+            <div class="stat-lbl">Estructuras y proyectos<br>publicitarios especiales</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Sectores</div>
+          <h2 class="section-title" id="sec-heading">
+            Rotulación para <span class="gold">cada tipo de negocio</span>
+          </h2>
+          <p>De talleres y comercios locales a campañas institucionales, adaptamos el proyecto a la escala de tu negocio.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-car sector-icon" aria-hidden="true"></i>
+            <h3>Automotriz</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Comercial</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-landmark sector-icon" aria-hidden="true"></i>
+            <h3>Gobierno e Instituciones</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-trophy sector-icon" aria-hidden="true"></i>
+            <h3>Marcas y Campañas Nacionales</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-users sector-icon" aria-hidden="true"></i>
+            <h3>Deportivo y Entretenimiento</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: ROTULACIÓN DE FACHADAS Y NEGOCIOS
+    ══════════════════════════════════════════════════ -->
+    <section id="rotulacion" class="servicio srv-alt" aria-labelledby="rot-heading">
+      <div class="container">
+        <div class="servicio-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="rot-heading">
+              Rotulación de<br><span class="gold">Fachadas y Negocios</span>
+            </h2>
+            <p class="servicio-lead">
+              Rótulos pintados o en vinil para la fachada de tu negocio. Se obtienen:
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de rotulación de fachadas">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Rotulación de fachadas y muros</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Letreros y anuncios de negocio</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Rotulación de cortinas y persianas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Aplicación de vinil de corte</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pintura de logotipos a mano</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Fabricación de rótulos luminosos y cajas de luz</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mantenimiento y repintado de rótulos</li>
+            </ul>
+
+            <a href="#contacto" class="btn-gold">
+              Contáctanos
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/rotulacion-muro-taller.jpg"
+                   alt="Rotulación pintada a mano sobre muro de negocio, letras grandes en negro">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Acabado Profesional
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: TOLDOS Y LONAS PUBLICITARIAS
+    ══════════════════════════════════════════════════ -->
+    <section id="toldos-lonas" class="servicio" aria-labelledby="toldos-heading">
+      <div class="container">
+        <div class="servicio-wrap flip">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="toldos-heading">
+              Toldos <span class="gold">y Lonas Publicitarias</span>
+            </h2>
+            <p class="servicio-lead">
+              Cubre tu local y anuncia tu negocio al mismo tiempo:
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de toldos y lonas">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Toldos de vinil a la medida</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Lonas publicitarias impresas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Estructura e instalación incluida</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Rotulación de toldos existentes</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mantenimiento y lavado de toldos</li>
+            </ul>
+
+            <a href="#contacto" class="btn-gold">
+              Contáctanos
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/toldo-fachada-comercial.jpg"
+                   alt="Toldo publicitario rojo instalado sobre fachada de comercio">
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-umbrella" style="color:var(--red-light);"></i>
+                Vinil a la Medida
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: BARDAS, AZOTEAS Y PUBLICIDAD EXTERIOR
+    ══════════════════════════════════════════════════ -->
+    <section id="bardas-azoteas" class="servicio srv-alt" aria-labelledby="bardas-heading">
+      <div class="container">
+        <div class="servicio-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="bardas-heading">
+              Bardas, Azoteas <span class="gold">y Publicidad Exterior</span>
+            </h2>
+            <p class="servicio-lead">
+              Anuncios de gran formato pensados para verse desde la calle, la avenida o el aire:
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de publicidad exterior de gran formato">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pintura de bardas publicitarias</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Rotulación de azoteas a gran escala</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Murales publicitarios e institucionales</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Anuncios espectaculares</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Publicidad en gradas y espacios deportivos</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Documentación fotográfica y en video</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Trabajo en altura con equipo de seguridad</li>
+            </ul>
+
+            <p class="srv-note">
+              Cada proyecto de gran formato se documenta en fotografía y video aéreo, listo para que lo compartas o lo uses en tus propias campañas.
+            </p>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/mural-publicitario-gran-formato.jpg"
+                   alt="Mural publicitario de gran formato para campaña de marca nacional">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Gran Formato
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: MURALES, INSTALACIONES Y PROYECTOS ESPECIALES
+    ══════════════════════════════════════════════════ -->
+    <section id="murales-especiales" class="servicio" aria-labelledby="murales-heading">
+      <div class="container">
+        <div class="servicio-wrap flip">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="murales-heading">
+              Murales, Instalaciones <span class="gold">y Proyectos Especiales</span>
+            </h2>
+            <p class="servicio-lead">
+              Cuando el proyecto necesita algo distinto a un rótulo tradicional:
+            </p>
+
+            <ul class="srv-list one-col" aria-label="Servicios de murales y proyectos especiales">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Murales institucionales y educativos</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Estructuras y piezas publicitarias tridimensionales</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Rotulación de logotipos para otras marcas y negocios</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Señalética y directorios</li>
+            </ul>
+
+            <a href="#contacto" class="btn-outline">
+              <i class="fa-solid fa-comments" style="font-size:15px; color:var(--gray);"></i>
+              Consulta tu proyecto
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/escultura-3d-publicitaria.jpg"
+                   alt="Pieza publicitaria tridimensional pintada a mano para exhibición de marca">
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-shapes" style="color:var(--red-light);"></i>
+                Proyectos a la Medida
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Solicita tu <span class="gold">cotización</span>
+          </h2>
+          <p>Cuéntanos qué necesitas rotular y te respondemos con una propuesta a la medida de tu negocio.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Directa</h3>
+            <p class="ci-sub">Hablas directo con el equipo que va a diseñar e instalar tu proyecto.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Cobertura</h4>
+                  <p><!-- TODO: reemplazar con ciudad/estado real -->
+                     Atendemos proyectos en [Ciudad, Estado]<br>
+                     y zonas cercanas.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <!-- TODO: reemplazar con número real -->
+                    <a href="tel:+52XXXXXXXXXX">[Teléfono pendiente]</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Envíanos fotos de tu fachada, barda o local y te cotizamos más rápido.</p>
+                  <!-- TODO: reemplazar con número real de WhatsApp -->
+                  <a href="https://wa.me/52XXXXXXXXXX" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Juan Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas rotular?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Rótulos y Fachadas</option>
+                    <option>Toldos y Lonas</option>
+                    <option>Bardas y Azoteas Publicitarias</option>
+                    <option>Murales y Proyectos Especiales</option>
+                    <option>Aún no estoy seguro</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle de tu proyecto</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Cuéntanos el tipo de negocio, el tamaño aproximado del espacio a rotular, la ubicación o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar Cotización por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación con nuestro equipo.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="imagenes/logo-impacto.png" alt="IMPACTO — Rótulos, Toldos, Publicidad y mucho más">
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> IMPACTO — Rótulos, Toldos, Publicidad y mucho más... Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <!-- TODO: reemplazar hrefs con las redes sociales reales del negocio -->
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <!-- TODO: reemplazar con número real de WhatsApp -->
+          <a href="https://wa.me/52XXXXXXXXXX" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <!-- TODO: reemplazar con número real de WhatsApp -->
+  <a href="https://wa.me/52XXXXXXXXXX?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
