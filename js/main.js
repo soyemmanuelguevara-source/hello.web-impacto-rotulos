@@ -132,8 +132,31 @@
     });
   }
 
+  /* ───────── Floating WhatsApp menu ───────── */
+  var waFab = document.getElementById('wa-fab');
+  var waBtn = document.getElementById('wa-btn');
+  if (waFab && waBtn) {
+    waBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var isOpen = waFab.classList.toggle('is-open');
+      waBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+    document.addEventListener('click', function (e) {
+      if (waFab.classList.contains('is-open') && !waFab.contains(e.target)) {
+        waFab.classList.remove('is-open');
+        waBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && waFab.classList.contains('is-open')) {
+        waFab.classList.remove('is-open');
+        waBtn.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+
   /* ───────── Contact form → WhatsApp ───────── */
-  var WHATSAPP_NUMBER = '52XXXXXXXXXX'; // TODO: reemplazar con el número real de WhatsApp de Impacto (sin espacios, con lada 52 + 10 dígitos)
+  var WHATSAPP_NUMBER = '525567558548';
   var form = document.getElementById('wa-form');
   if (form) {
     form.addEventListener('submit', function (e) {
